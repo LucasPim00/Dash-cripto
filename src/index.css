@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #00ff9d;
+  --color-primary-dark: #00cc7d;
+}
+
+.chart-container.bg-dark {
+  @apply bg-gray-800;
+}
+
+.chart-container.bg-light {
+  @apply bg-white; 
+}
+
+
+.chart-container .recharts-cartesian-grid-horizontal line,
+.chart-container .recharts-cartesian-grid-vertical line {
+  @apply stroke-gray-700;
+}
+
+.chart-container .recharts-text {
+  @apply fill-gray-400;
+}
